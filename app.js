@@ -1,5 +1,4 @@
 const maxNodeApi = require("max-api");
+const main = require("./node_dist/app/Main.js");
 
-maxNodeApi.addHandler("hoge", (...args) => {
-  maxNodeApi.outlet("fuga");
-});
+new main.Main(maxNodeApi, process);
